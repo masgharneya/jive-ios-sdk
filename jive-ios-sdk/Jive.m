@@ -1376,6 +1376,31 @@ int const JivePushDeviceType = 3;
     [[self resourcesOperation:complete onError:error] start];
 }
 
+#pragma mark - Sessions
+
+- (void) sessions:(JiveContentRequestOptions *)options onComplete:(void (^)(NSArray *))complete onError:(JiveErrorBlock)error {
+    [[self sessionsOperation:options onComplete:complete onError:error] start];
+}
+
+- (AFJSONRequestOperation<JiveRetryingOperation> *)sessionsOperation:(JiveContentRequestOptions *)options onComplete:(void (^)(NSArray *))complete onError:(JiveErrorBlock)error {
+    return [self sessionsListOperation:JiveRequestPathComponents.contents
+                           withOptions:options
+                            onComplete:complete
+                               onError:error];
+}
+
+- (AFJSONRequestOperation<JiveRetryingOperation> *) sessionsListOperation:(NSString *)callName withOptions:(NSObject<JiveRequestOptions>*)options onComplete:(void (^)(NSArray *))completeBlock onError:(JiveErrorBlock)errorBlock {
+    NSURLRequest *request = [self credentialedRequestWithOptions:options
+                                                     andTemplate:[self appendPathToBaseURI:callName],
+                             nil];
+    AFJSONRequestOperation<JiveRetryingOperation> *operation = [self listOperationForClass:[JiveSession class]
+                                                                                   request:request
+                                                                                onComplete:completeBlock
+                                                                                   onError:errorBlock];
+    return operation;
+}
+
+
 #pragma mark - Content
 
 - (void) contentFromURL:(NSURL *)contentURL onComplete:(void (^)(JiveContent *content))completeBlock onError:(JiveErrorBlock)errorBlock {
