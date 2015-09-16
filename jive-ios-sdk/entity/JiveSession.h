@@ -6,7 +6,7 @@
 //  Copyright © 2015 Jive Software. All rights reserved.
 //
 
-#import <jive-ios-sdk-headers/jive-ios-sdk-headers.h>
+#import "JiveEvent.h"
 
 @interface JiveSession : JiveEvent
 

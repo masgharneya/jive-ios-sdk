@@ -7,6 +7,7 @@
 //
 
 #import "JiveSession.h"
+#import "JiveTypedObject_internal.h"
 
 @implementation JiveSession
 
