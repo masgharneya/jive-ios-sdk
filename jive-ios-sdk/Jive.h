@@ -100,7 +100,6 @@
 #import "JiveOutcomeTypeConstants.h"
 #import "JiveNewsStream.h"
 #import "JiveNews.h"
-#import "JiveSession.h"
 
 extern int const JivePushDeviceType;
 
@@ -465,10 +464,6 @@ typedef void (^JiveBadRequestLoggerBlock)(NSString *message, Jive *jive, NSURLRe
 - (AFImageRequestOperation<JiveRetryingOperation> *) avatarOperationForPlace:(JivePlace *)place options:(JiveDefinedSizeRequestOptions *)options onComplete:(JiveNativeImageCompleteBlock)completeBlock onError:(JiveErrorBlock)errorBlock;
 //! https://docs.developers.jivesoftware.com/api/v3/cloud/rest/PlaceService.html#getPlaceTasks(String,%20String,%20int,%20int,%20String,%20boolean)
 - (AFJSONRequestOperation<JiveRetryingOperation> *) tasksOperationForPlace:(JivePlace *)place options:(JiveSortedRequestOptions *)options onComplete:(void (^)(NSArray *tasks))completeBlock onError:(JiveErrorBlock)errorBlock;
-
-#pragma mark - Sessions
-
-- (void) sessions:(JiveContentRequestOptions *)options onComplete:(void (^)(NSArray *))complete onError:(JiveErrorBlock)error;
 
 #pragma mark - Contents
 
