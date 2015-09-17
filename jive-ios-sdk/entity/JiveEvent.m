@@ -24,10 +24,10 @@
 
 static NSString * const JiveEventType = @"event";
 
-+ (void)load {
-    if (self == [JiveEvent class])
-        [super registerClass:self forType:JiveEventType];
-}
+//+ (void)load {
+//    if (self == [JiveEvent class])
+//        [super registerClass:self forType:JiveEventType];
+//}
 
 - (NSString *)type {
     return JiveEventType;

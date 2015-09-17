@@ -249,6 +249,8 @@
 		0FF81F281865020C00B7E172 /* JiveTermsAndConditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF81F271865020C00B7E172 /* JiveTermsAndConditionsTests.m */; };
 		0FFC9A851A36640900DA88B0 /* post_alternate.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FFC9A841A36640900DA88B0 /* post_alternate.json */; };
 		0FFC9A8B1A36643300DA88B0 /* post.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FFC9A8A1A36643300DA88B0 /* post.json */; };
+		1CA23CC41BAAFCF400297450 /* JiveSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA23CC21BAAFCF300297450 /* JiveSession.h */; settings = {ASSET_TAGS = (); }; };
+		1CA23CC51BAAFCF400297450 /* JiveSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA23CC31BAAFCF400297450 /* JiveSession.m */; settings = {ASSET_TAGS = (); }; };
 		215040DF16DEA43A00CD0AAE /* JiveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 215040DD16DEA43900CD0AAE /* JiveImage.m */; };
 		217FE0D41638524E00182AB5 /* JiveInboxEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FE0D31638524E00182AB5 /* JiveInboxEntry.m */; };
 		217FE0D71638528F00182AB5 /* JiveActivityObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FE0D61638528F00182AB5 /* JiveActivityObject.m */; };
@@ -973,6 +975,8 @@
 		0FF81F271865020C00B7E172 /* JiveTermsAndConditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveTermsAndConditionsTests.m; sourceTree = "<group>"; };
 		0FFC9A841A36640900DA88B0 /* post_alternate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = post_alternate.json; sourceTree = "<group>"; };
 		0FFC9A8A1A36643300DA88B0 /* post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = post.json; sourceTree = "<group>"; };
+		1CA23CC21BAAFCF300297450 /* JiveSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveSession.h; sourceTree = "<group>"; };
+		1CA23CC31BAAFCF400297450 /* JiveSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveSession.m; sourceTree = "<group>"; };
 		215040DC16DEA43900CD0AAE /* JiveImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveImage.h; sourceTree = "<group>"; };
 		215040DD16DEA43900CD0AAE /* JiveImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveImage.m; sourceTree = "<group>"; };
 		217FE0D21638524E00182AB5 /* JiveInboxEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveInboxEntry.h; sourceTree = "<group>"; };
@@ -1588,6 +1592,8 @@
 				78185D68163ED7950081DF7A /* JiveEmail.m */,
 				217FE0EB16385D3800182AB5 /* JiveEmbedded.h */,
 				217FE0EC16385D3800182AB5 /* JiveEmbedded.m */,
+				1CA23CC21BAAFCF300297450 /* JiveSession.h */,
+				1CA23CC31BAAFCF400297450 /* JiveSession.m */,
 				893CE2D91700F368002AA837 /* JiveEvent.h */,
 				893CE2DA1700F368002AA837 /* JiveEvent.m */,
 				217FE0DF163858D500182AB5 /* JiveExtension.h */,
@@ -2141,6 +2147,7 @@
 				B8655259179884B300AAF1AD /* JiveStream.h in Headers */,
 				0F42194B1926C5FF008C1366 /* JiveVia.h in Headers */,
 				B865525A179884B300AAF1AD /* JiveStreamEntry.h in Headers */,
+				1CA23CC41BAAFCF400297450 /* JiveSession.h in Headers */,
 				B865525B179884B300AAF1AD /* JiveSummary.h in Headers */,
 				B865525C179884B300AAF1AD /* JiveTask.h in Headers */,
 				B865525D179884B300AAF1AD /* JiveTargetList.h in Headers */,
@@ -2583,6 +2590,7 @@
 				0FA17D1D16651C540008F833 /* JiveReturnFieldsRequestOptions.m in Sources */,
 				0F0913631665380C0036C4E8 /* JiveCountRequestOptions.m in Sources */,
 				0F09136C166551E30036C4E8 /* JivePagedRequestOptions.m in Sources */,
+				1CA23CC51BAAFCF400297450 /* JiveSession.m in Sources */,
 				0F09147F166687C10036C4E8 /* JiveDateLimitedRequestOptions.m in Sources */,
 				0F091481166687C10036C4E8 /* JiveSortedRequestOptions.m in Sources */,
 				0F091482166687C10036C4E8 /* JiveWelcomeRequestOptions.m in Sources */,
