@@ -249,6 +249,10 @@
 		0FF81F281865020C00B7E172 /* JiveTermsAndConditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF81F271865020C00B7E172 /* JiveTermsAndConditionsTests.m */; };
 		0FFC9A851A36640900DA88B0 /* post_alternate.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FFC9A841A36640900DA88B0 /* post_alternate.json */; };
 		0FFC9A8B1A36643300DA88B0 /* post.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FFC9A8A1A36643300DA88B0 /* post.json */; };
+		1C4E111D1BAE4CFE00E49574 /* JiveAttendees.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4E111C1BAE4CFE00E49574 /* JiveAttendees.m */; settings = {ASSET_TAGS = (); }; };
+		1C4E11221BAE4D0D00E49574 /* JiveAttendees.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C4E111B1BAE4CFE00E49574 /* JiveAttendees.h */; settings = {ASSET_TAGS = (); }; };
+		1C4E11251BAE503000E49574 /* JiveAttendance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4E11241BAE503000E49574 /* JiveAttendance.m */; settings = {ASSET_TAGS = (); }; };
+		1C4E11261BAE503600E49574 /* JiveAttendance.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C4E11231BAE503000E49574 /* JiveAttendance.h */; settings = {ASSET_TAGS = (); }; };
 		1CA23CC41BAAFCF400297450 /* JiveSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA23CC21BAAFCF300297450 /* JiveSession.h */; settings = {ASSET_TAGS = (); }; };
 		1CA23CC51BAAFCF400297450 /* JiveSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA23CC31BAAFCF400297450 /* JiveSession.m */; settings = {ASSET_TAGS = (); }; };
 		215040DF16DEA43A00CD0AAE /* JiveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 215040DD16DEA43900CD0AAE /* JiveImage.m */; };
@@ -975,6 +979,10 @@
 		0FF81F271865020C00B7E172 /* JiveTermsAndConditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveTermsAndConditionsTests.m; sourceTree = "<group>"; };
 		0FFC9A841A36640900DA88B0 /* post_alternate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = post_alternate.json; sourceTree = "<group>"; };
 		0FFC9A8A1A36643300DA88B0 /* post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = post.json; sourceTree = "<group>"; };
+		1C4E111B1BAE4CFE00E49574 /* JiveAttendees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveAttendees.h; sourceTree = "<group>"; };
+		1C4E111C1BAE4CFE00E49574 /* JiveAttendees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveAttendees.m; sourceTree = "<group>"; };
+		1C4E11231BAE503000E49574 /* JiveAttendance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveAttendance.h; sourceTree = "<group>"; };
+		1C4E11241BAE503000E49574 /* JiveAttendance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveAttendance.m; sourceTree = "<group>"; };
 		1CA23CC21BAAFCF300297450 /* JiveSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveSession.h; sourceTree = "<group>"; };
 		1CA23CC31BAAFCF400297450 /* JiveSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveSession.m; sourceTree = "<group>"; };
 		215040DC16DEA43900CD0AAE /* JiveImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveImage.h; sourceTree = "<group>"; };
@@ -1594,6 +1602,10 @@
 				217FE0EC16385D3800182AB5 /* JiveEmbedded.m */,
 				1CA23CC21BAAFCF300297450 /* JiveSession.h */,
 				1CA23CC31BAAFCF400297450 /* JiveSession.m */,
+				1C4E11231BAE503000E49574 /* JiveAttendance.h */,
+				1C4E11241BAE503000E49574 /* JiveAttendance.m */,
+				1C4E111B1BAE4CFE00E49574 /* JiveAttendees.h */,
+				1C4E111C1BAE4CFE00E49574 /* JiveAttendees.m */,
 				893CE2D91700F368002AA837 /* JiveEvent.h */,
 				893CE2DA1700F368002AA837 /* JiveEvent.m */,
 				217FE0DF163858D500182AB5 /* JiveExtension.h */,
@@ -2123,6 +2135,7 @@
 				B8655243179884B300AAF1AD /* JiveName.h in Headers */,
 				B8655244179884B300AAF1AD /* JiveObject.h in Headers */,
 				B8655245179884B300AAF1AD /* JiveObject_internal.h in Headers */,
+				1C4E11221BAE4D0D00E49574 /* JiveAttendees.h in Headers */,
 				B8655246179884B300AAF1AD /* JiveObjectMetadata.h in Headers */,
 				B8655247179884B300AAF1AD /* JiveOpenSocial.h in Headers */,
 				B8655248179884B300AAF1AD /* JiveOutcome.h in Headers */,
@@ -2146,6 +2159,7 @@
 				B8655258179884B300AAF1AD /* JiveStatic.h in Headers */,
 				B8655259179884B300AAF1AD /* JiveStream.h in Headers */,
 				0F42194B1926C5FF008C1366 /* JiveVia.h in Headers */,
+				1C4E11261BAE503600E49574 /* JiveAttendance.h in Headers */,
 				B865525A179884B300AAF1AD /* JiveStreamEntry.h in Headers */,
 				1CA23CC41BAAFCF400297450 /* JiveSession.h in Headers */,
 				B865525B179884B300AAF1AD /* JiveSummary.h in Headers */,
@@ -2526,6 +2540,7 @@
 			files = (
 				2192BC8F1614FF8200082926 /* AFHTTPClient.m in Sources */,
 				2192BC901614FF8200082926 /* AFHTTPRequestOperation.m in Sources */,
+				1C4E11251BAE503000E49574 /* JiveAttendance.m in Sources */,
 				2192BC911614FF8200082926 /* AFImageRequestOperation.m in Sources */,
 				2192BC921614FF8200082926 /* AFJSONRequestOperation.m in Sources */,
 				2192BC931614FF8200082926 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -2577,6 +2592,7 @@
 				7814D5A716544EBC000D9BE9 /* JiveFavorite.m in Sources */,
 				7814D5AA16544FC7000D9BE9 /* JiveObjectMetadata.m in Sources */,
 				7814D5AD16545174000D9BE9 /* JiveField.m in Sources */,
+				1C4E111D1BAE4CFE00E49574 /* JiveAttendees.m in Sources */,
 				0F9A28311A1A932400E98CD4 /* JiveAuthorableContent.m in Sources */,
 				7814D5B0165452A2000D9BE9 /* JiveResource.m in Sources */,
 				7814D5B3165453C8000D9BE9 /* JiveTask.m in Sources */,
