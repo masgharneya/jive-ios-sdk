@@ -16,11 +16,12 @@ struct JiveSessionAttributes const JiveSessionAttributes = {
     .endDate = @"endDate",
     .location = @"location",
     .attendance = @"attendance",
+    .authors = @"authors"
 };
 
 @implementation JiveSession
 
-@synthesize startDate, endDate, location, attendance;
+@synthesize startDate, endDate, location, attendance, authors;
 
 static NSString * const JiveEventType = @"event";
 
@@ -31,6 +32,15 @@ static NSString * const JiveEventType = @"event";
 
 - (NSString *)type {
     return JiveEventType;
+}
+
+
+- (Class)arrayMappingFor:(NSString*)propertyName {
+    if ([JiveSessionAttributes.authors isEqualToString:propertyName]) {
+        return [JivePerson class];
+    }
+    
+    return [super arrayMappingFor:propertyName];
 }
 
 @end
