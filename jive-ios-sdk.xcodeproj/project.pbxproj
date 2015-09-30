@@ -255,6 +255,8 @@
 		1C4E11261BAE503600E49574 /* JiveAttendance.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C4E11231BAE503000E49574 /* JiveAttendance.h */; settings = {ASSET_TAGS = (); }; };
 		1CA23CC41BAAFCF400297450 /* JiveSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA23CC21BAAFCF300297450 /* JiveSession.h */; settings = {ASSET_TAGS = (); }; };
 		1CA23CC51BAAFCF400297450 /* JiveSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA23CC31BAAFCF400297450 /* JiveSession.m */; settings = {ASSET_TAGS = (); }; };
+		1CFDC8341BBC8DD300F9370C /* JiveFileDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDC8331BBC8DD300F9370C /* JiveFileDocument.m */; settings = {ASSET_TAGS = (); }; };
+		1CFDC8391BBC8DDD00F9370C /* JiveFileDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDC8321BBC8DD300F9370C /* JiveFileDocument.h */; settings = {ASSET_TAGS = (); }; };
 		215040DF16DEA43A00CD0AAE /* JiveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 215040DD16DEA43900CD0AAE /* JiveImage.m */; };
 		217FE0D41638524E00182AB5 /* JiveInboxEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FE0D31638524E00182AB5 /* JiveInboxEntry.m */; };
 		217FE0D71638528F00182AB5 /* JiveActivityObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FE0D61638528F00182AB5 /* JiveActivityObject.m */; };
@@ -985,6 +987,8 @@
 		1C4E11241BAE503000E49574 /* JiveAttendance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveAttendance.m; sourceTree = "<group>"; };
 		1CA23CC21BAAFCF300297450 /* JiveSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveSession.h; sourceTree = "<group>"; };
 		1CA23CC31BAAFCF400297450 /* JiveSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveSession.m; sourceTree = "<group>"; };
+		1CFDC8321BBC8DD300F9370C /* JiveFileDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveFileDocument.h; sourceTree = "<group>"; };
+		1CFDC8331BBC8DD300F9370C /* JiveFileDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveFileDocument.m; sourceTree = "<group>"; };
 		215040DC16DEA43900CD0AAE /* JiveImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveImage.h; sourceTree = "<group>"; };
 		215040DD16DEA43900CD0AAE /* JiveImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiveImage.m; sourceTree = "<group>"; };
 		217FE0D21638524E00182AB5 /* JiveInboxEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiveInboxEntry.h; sourceTree = "<group>"; };
@@ -1620,6 +1624,8 @@
 				7814D5AC16545173000D9BE9 /* JiveField.m */,
 				7814D596165447B6000D9BE9 /* JiveFile.h */,
 				7814D597165447B7000D9BE9 /* JiveFile.m */,
+				1CFDC8321BBC8DD300F9370C /* JiveFileDocument.h */,
+				1CFDC8331BBC8DD300F9370C /* JiveFileDocument.m */,
 				CCFEBA2C188ED6000044EC01 /* JiveGenericPerson.h */,
 				CCFEBA2D188ED6000044EC01 /* JiveGenericPerson.m */,
 				783E15561655596A0094B6A7 /* JiveGroup.h */,
@@ -2082,6 +2088,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CFDC8391BBC8DDD00F9370C /* JiveFileDocument.h in Headers */,
 				CCF22DEA187608C100C77397 /* JiveExternalObject.h in Headers */,
 				B8655216179884B300AAF1AD /* AFHTTPClient.h in Headers */,
 				B8655217179884B300AAF1AD /* AFHTTPRequestOperation.h in Headers */,
@@ -2553,6 +2560,7 @@
 				217FE0D71638528F00182AB5 /* JiveActivityObject.m in Sources */,
 				0F150F721A2649FC00A84558 /* JiveNewsStream.m in Sources */,
 				0F150F6A1A26497900A84558 /* JiveNews.m in Sources */,
+				1CFDC8341BBC8DD300F9370C /* JiveFileDocument.m in Sources */,
 				217FE0DD1638546900182AB5 /* JiveMediaLink.m in Sources */,
 				217FE0E1163858D500182AB5 /* JiveExtension.m in Sources */,
 				CCFEBA2E188ED6000044EC01 /* JiveGenericPerson.m in Sources */,
