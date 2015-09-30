@@ -256,7 +256,7 @@
 		1CA23CC41BAAFCF400297450 /* JiveSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA23CC21BAAFCF300297450 /* JiveSession.h */; settings = {ASSET_TAGS = (); }; };
 		1CA23CC51BAAFCF400297450 /* JiveSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA23CC31BAAFCF400297450 /* JiveSession.m */; settings = {ASSET_TAGS = (); }; };
 		1CFDC8341BBC8DD300F9370C /* JiveFileDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDC8331BBC8DD300F9370C /* JiveFileDocument.m */; settings = {ASSET_TAGS = (); }; };
-		1CFDC8391BBC8DDD00F9370C /* JiveFileDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDC8321BBC8DD300F9370C /* JiveFileDocument.h */; settings = {ASSET_TAGS = (); }; };
+		1CFDC8391BBC8DDD00F9370C /* JiveFileDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDC8321BBC8DD300F9370C /* JiveFileDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		215040DF16DEA43A00CD0AAE /* JiveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 215040DD16DEA43900CD0AAE /* JiveImage.m */; };
 		217FE0D41638524E00182AB5 /* JiveInboxEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FE0D31638524E00182AB5 /* JiveInboxEntry.m */; };
 		217FE0D71638528F00182AB5 /* JiveActivityObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FE0D61638528F00182AB5 /* JiveActivityObject.m */; };
