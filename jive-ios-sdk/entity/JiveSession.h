@@ -15,6 +15,7 @@ extern struct JiveSessionAttributes {
     __unsafe_unretained NSString *location;
     __unsafe_unretained NSString *attendance;
     __unsafe_unretained NSString *authors;
+    __unsafe_unretained NSString *city;
 } const JiveSessionAttributes;
 
 @interface JiveSession : JiveEvent
@@ -22,6 +23,7 @@ extern struct JiveSessionAttributes {
 @property(nonatomic, readonly, strong) NSDate *startDate;
 @property(nonatomic, readonly, strong) NSDate *endDate;
 @property(nonatomic, readonly, copy) NSString *location;
+@property(nonatomic, readonly, copy) NSString *city;
 
 @property (nonatomic, readonly, strong) JiveAttendance *attendance;
 

@@ -16,12 +16,13 @@ struct JiveSessionAttributes const JiveSessionAttributes = {
     .endDate = @"endDate",
     .location = @"location",
     .attendance = @"attendance",
-    .authors = @"authors"
+    .authors = @"authors",
+    .city = @"city"
 };
 
 @implementation JiveSession
 
-@synthesize startDate, endDate, location, attendance, authors;
+@synthesize startDate, endDate, location, attendance, authors, city;
 
 static NSString * const JiveEventType = @"event";
 
