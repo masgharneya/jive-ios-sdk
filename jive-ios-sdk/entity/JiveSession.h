@@ -29,4 +29,9 @@ extern struct JiveSessionAttributes {
 
 @property (nonatomic, readonly, strong) NSArray *authors;
 
+- (NSURL *)yesAttendeesRef;
+- (NSURL *)maybeAttendeesRef;
+- (NSURL *)noAttendeesRef;
+- (NSURL *)inviteesRef;
+
 @end

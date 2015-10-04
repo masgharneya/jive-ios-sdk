@@ -11,10 +11,12 @@
 
 extern struct JiveAttendeesAttributes {
     __unsafe_unretained NSString *users;
+    __unsafe_unretained NSString *moreAvailable;
 } const JiveAttendeesAttributes;
 
 @interface JiveAttendees : JiveObject
 
 @property(nonatomic, readonly, strong) NSArray *users;
+@property (nonatomic, readonly) BOOL moreAvailable;
 
 @end

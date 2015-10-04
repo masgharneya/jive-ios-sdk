@@ -11,11 +11,12 @@
 
 struct JiveAttendeesAttributes const JiveAttendeesAttributes = {
     .users = @"users",
+    .moreAvailable = @"moreAvailable",
 };
 
 @implementation JiveAttendees
 
-@synthesize users;
+@synthesize users, moreAvailable;
 
 - (Class)arrayMappingFor:(NSString*)propertyName {
     if ([JiveAttendeesAttributes.users isEqualToString:propertyName]) {
