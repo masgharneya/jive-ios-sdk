@@ -955,6 +955,39 @@ int const JivePushDeviceType = 3;
     }
 }
 
+#pragma mark - Session
+
+- (void)attendeesFromURL:(NSURL *)attendeesURL options:(JivePeopleRequestOptions *)options onComplete:(void (^)(NSArray *))completeBlock onError:(JiveErrorBlock)errorBlock {
+    AFJSONRequestOperation *operation = [self attendeesOperationWithURL:attendeesURL
+                                                                options:options
+                                                             onComplete:completeBlock
+                                                                onError:errorBlock];
+    
+    [operation start];
+}
+
+- (AFJSONRequestOperation<JiveRetryingOperation> *)attendeesOperationWithURL:(NSURL *)attendeesURL options:(JivePeopleRequestOptions *)options onComplete:(void (^)(NSArray *))completeBlock onError:(JiveErrorBlock)errorBlock {
+    
+    NSMutableString *requestString = [attendeesURL.absoluteString mutableCopy];
+    NSString *queryString = [options toQueryString];
+    
+    if (queryString) {
+        [requestString appendFormat:@"?%@", queryString];
+    }
+    
+    NSURL *url = [NSURL URLWithString:requestString];
+    NSMutableURLRequest *mutableURLRequest = [NSMutableURLRequest requestWithURL:url];
+    
+    [self maybeApplyCredentialsToMutableURLRequest:mutableURLRequest
+                                            forURL:attendeesURL];
+    
+    return [self listOperationForClass:[JivePerson class]
+                               request:mutableURLRequest
+                            onComplete:completeBlock
+                               onError:errorBlock];
+}
+
+
 #pragma mark - People
 
 - (void)personFromURL:(NSURL *)personURL onComplete:(void (^)(JivePerson *person))completeBlock onError:(JiveErrorBlock)errorBlock {
@@ -965,7 +998,7 @@ int const JivePushDeviceType = 3;
     [operation start];
 }
 
-- (AFJSONRequestOperation<JiveRetryingOperation> *)personOperationWithURL:(NSURL *)personURL onComplete:(void (^)(JivePerson *person))completeBlock onError:(JiveErrorBlock)errorBlock {
+- (AFJSONRequestOperation<JiveRetryingOperation> *)personOperationWithURL:(NSURL *)personURL options:(JivePeopleRequestOptions *)options onComplete:(void (^)(JivePerson *person))completeBlock onError:(JiveErrorBlock)errorBlock {
     NSMutableURLRequest *mutableURLRequest = [NSMutableURLRequest requestWithURL:personURL];
     
     [self maybeApplyCredentialsToMutableURLRequest:mutableURLRequest

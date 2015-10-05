@@ -213,6 +213,12 @@ typedef void (^JiveBadRequestLoggerBlock)(NSString *message, Jive *jive, NSURLRe
 //! https://docs.developers.jivesoftware.com/api/v3/cloud/rest/AnnouncementService.html#markRead(String)
 - (AFJSONRequestOperation<JiveRetryingOperation> *) markAnnouncementOperationWithAnnouncement:(JiveAnnouncement *)announcement asRead:(BOOL)read onComplete:(void (^)(void))completeBlock onError:(JiveErrorBlock)errorBlock;
 
+#pragma mark - Session
+
+- (void)attendeesFromURL:(NSURL *)attendeesURL options:(JivePeopleRequestOptions *)options onComplete:(void (^)(NSArray *))completeBlock onError:(JiveErrorBlock)errorBlock;
+
+- (AFJSONRequestOperation<JiveRetryingOperation> *)attendeesOperationWithURL:(NSURL *)attendeesURL options:(JivePeopleRequestOptions *)options onComplete:(void (^)(NSArray *))completeBlock onError:(JiveErrorBlock)errorBlock;
+
 #pragma mark - People
 
 //! Retrieve the JivePerson object from the specified URL.
