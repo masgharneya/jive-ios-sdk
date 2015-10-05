@@ -47,6 +47,11 @@
             query = [NSString stringWithFormat:@"hierarchical=true"];
         else
             query = [query stringByAppendingFormat:@"&hierarchical=true"];
+    } else {
+        if (!query)
+            query = [NSString stringWithFormat:@"hierarchical=false"];
+        else
+            query = [query stringByAppendingFormat:@"&hierarchical=false"];
     }
     
     return query;
